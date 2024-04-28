@@ -1,0 +1,49 @@
+.top
+{
+border: 0px solid black;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.top1 
+{
+margin-top: 20px;
+margin-bottom: 20px;
+/* border: 2px solid red; */
+width: 350px;
+height: 250px;
+float: left;
+box-shadow: 5px 5px 5px 10px #f1f1f1;
+transition: transform 1s;
+}
+
+.top1:hover
+{
+    transform: scale(1.05);
+}
+
+.top1 img 
+{
+width: 100%;    
+}
+
+.checked
+{
+    color: orange;
+}
+
+.star
+{
+/* border: 2px solid black; */
+text-align: center;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title p 
+{
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+
+
+
+.contact
+{
+    width: 100%;
+    height: 450px;
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_content
+{
+    width: 45%;
+    height: 440px;
+    /* border: 2px solid green; */
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+
+.contact_content table
+{
+    width: 660px;
+}
