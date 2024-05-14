@@ -65,7 +65,7 @@
 <body>
     <div class="container">
         <h1>Register</h1>
-        <form action="/registration" method="post">
+        <form action="/registration" method="post" onsubmit="return validateForm()">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" required><br>
 
@@ -78,5 +78,31 @@
             <input type="submit" value="Register">
         </form>
     </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+
+            if (username.trim() == "") {
+                errorMessage.innerText = "Please enter a username.";
+                return false;
+            }
+
+            if (email.trim() == "") {
+                errorMessage.innerText = "Please enter an email address.";
+                return false;
+            }
+
+            if (password.trim() == "") {
+                errorMessage.innerText = "Please enter a password.";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
