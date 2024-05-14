@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            background-image: url('/static/gb.jpg'); /* Add your background image */
+            background-size: cover; /* Ensure the background image covers the entire body */
+            font-family: Arial, sans-serif; /* Set your desired font family */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Text color */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: rgba(40, 87, 125, 0.8); /* Add a semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left; /* Align text to the left within cells */
+        }
+        th {
+            background-color: #f0f0f0;
+            color: #555; /* Header text color */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row background color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Order Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Delivery Address</th>
+                    <!-- <th>Delivery Time</th> -->
+                    <!-- <th>Delivery City</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through the order details passed from Flask and populate the table rows -->
+                {% for order_detail in order_details %}
+                    <tr>
+                        <td>{{ order_detail[0] }}</td>
+                        <td>{{ order_detail[1] }}</td>
+                        <td>{{ order_detail[2] }}</td>
+                        <td>{{ order_detail[3] }}</td>
+                        <!-- <td>{{ order_detail[4] }}</td> -->
+                        <!-- <td>{{ order_detail[5] }}</td> -->
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

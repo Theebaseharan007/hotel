@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url(sav7.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#navbar ul {
+    list-style: none;
+    z-index: 1000;
+}
+
+#navbar ul li {
+    background-color: black;
+    border: 1px solid white;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    position: relative;
+}
+
+#content {
+    text-align: center
+}
+
+.hotel-name {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#outerbox {
+    max-width: 100%; /* Adjusted max-width for responsiveness */
+    height: auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+#outerbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    background-color: green;
+}
+
+#navbar ul ul {
+    position: absolute;
+    display: none;
+}
+
+#navbar ul li:hover > ul {
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .background {
+        height: auto; /* Remove fixed height for smaller screens */
+    }
+
+    #navbar ul li {
+        width: 100%; /* Make menu items full width */
+        float: none; /* Remove float for stacking */
+    }
+
+    .hotel-name {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+}

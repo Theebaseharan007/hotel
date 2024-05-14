@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASAIVA VIRUNDHU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='veg.css') }}">
+<!--    <link rel="stylesheet" href="index.css">-->
+<!--    <link rel="stylesheet" href="footer.css">-->
+<!--    <link rel="stylesheet" href="veg.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="icon" href="static/fav.jpg" type="image/jpg" sizes="20x20">
+    <style>
+        /* Additional CSS styles for the cart button */
+        .btn-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar code -->
+    <div id="navbar">
+        <ul>
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li><a href="about.html">About</a></li>-->
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="">Menu</a>
+                <ul>
+                    <li><a href="/veg">Veg</a></li>
+                    <li><a href="/nonveg">Non-veg</a></li>
+                    <li><a href="/fastfood">Fast Food</a></li>
+<!--                    <li><a href="veg.html">Veg</a></li>-->
+<!--                    <li><a href="nonveg.html">Non-Veg</a></li>-->
+<!--                    <li><a href="fastfood.html">Fast Food</a></li>-->
+
+                </ul>
+            </li>
+            <li><a href="/total_orders">Orders</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/login">Login</a></li>
+<!--            <li><a href="order.html">Order</a></li>-->
+<!--            <li><a href="contact.html">Contact</a></li>-->
+<!--            <li><a href="login.html">Login</a></li>-->
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 align="center">Non-Veg Foods</h1>
+
+    <div class="top">
+        <div class="top1"><img src="static/non veg meals.jpg">
+            <div class="star">
+                <p><h1></h1>NON VEG MEALS</h1></p>
+            </div>
+            <div class="title"> 
+                <p>Cost &nbsp;<b>: 200</b></p>
+            </div>
+            <!-- Cart button -->
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+
+            </div>
+        </div>
+        <!-- Repeat the same structure for other menu items -->
+
+
+    <div class="top1"><img src="static/Chicken-Biryani.jpg">
+        <div class="star">
+            <p><h1></h1>CHICKEN BIRYANI</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 150</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+                <script type="module" src="./addtocart.js"></script>
+            </div>
+        </div>
+
+    </div>
+    <div class="top1"><img src="static/mutton briyani.jpg">
+        <div class="star">
+            <p><h1></h1>MUTTON  BIRYANI</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>150</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="top">
+    <div class="top1"><img src="static/prawn biryani.jpg">
+        <div class="star">
+            <p><h1></h1>CHICKEN RICE</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 180</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="top1"><img src="static/chicken-65.webp">
+        <div class="star">
+            <p><h1></h1>PRAWN BIRYANI</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>150</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="top1"><img src="static/mutton kudal gravy.jpg">
+        <div class="star">
+            <p><h1></h1>MUTTON GRAVY</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 80</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="top">
+    <div class="top1"><img src="static/fish roast2.jpg">
+        <div class="star">
+            <p><h1></h1>FISH FRY</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 50</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="top1"><img src="static/pepper chicken dry.jpg">
+        <div class="star">
+            <p><h1></h1>PEPPER CHICKEN</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 110</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="top1"><img src="static/pallipalayam dry.jpg">
+        <div class="star">
+            <p><h1></h1>PALLIPALAYAM</h1></p>
+        </div>
+        <div class="title">
+            <p>Cost &nbsp;<b>: 100</b></p>
+            <div class="btn">
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+</body>
+</html>
+
+    <footer class="ftr">
+        <div class="footerbox">
+            <b> Quick Link</b>
+            <br><br><br>
+            Home <br>
+            About <br>
+            Menu <br>
+            Order <br>
+            Contact <br>
+        </div>
+
+        <div class="footerbox">
+            <b>Menu</b>
+            <br><br><br>
+            Veg Foods <br>
+            Non Veg Foods <br>
+            Fast FoodS <br>
+        </div>
+
+        <div class="footerbox">
+            <b>Address</b>
+            <br><br><br>
+            Opposite to Nandha Nursing College, <br>
+            Erode to Perundurai Road, VAikalmedu<br>
+            Email: selvisasaivavirundhu@gmail.com<br>
+            Mobile : 9486167510 <br>
+            Time: 9:00 AM to 9:00 PM <br>
+        </div>
+        <br><br>
+
+        <div class="footerbox">
+            <b>Direction</b>
+            <br><br><br>
+            <iframe
+                src="https://maps.app.goo.gl/BW2HYC59gqxt541D9"
+                width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+<script>
+        // Get all the "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll('.btn-cart');
+
+        // Add click event listener to each button
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Redirect to the order page
+                window.location.href = '/order';
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

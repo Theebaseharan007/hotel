@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='slider.css') }}">
+<!--  <link rel="stylesheet" href="styles.css">-->
+  <style>
+    body {
+      background-image: url('static/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Place Your Order</h2>
+    <form id="orderForm" action="order.php" method="post" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="">Select Product</option>
+          <option value="product1">Product 1</option>
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Place Order">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      var product = document.getElementById("product").value;
+      var quantity = document.getElementById("quantity").value;
+
+      // Check if product is selected
+      if (product === "") {
+        alert("Please select a product.");
+        return false;
+      }
+
+      // Check if quantity is valid
+      if (quantity <= 0) {
+        alert("Please enter a valid quantity.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>

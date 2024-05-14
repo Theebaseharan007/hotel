@@ -1,0 +1,18 @@
+.ftr
+{
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerbox
+{
+    height: 180px;
+    width: 300px;
+    float: left;
+    color: white;
+    text-align: center;
+}
