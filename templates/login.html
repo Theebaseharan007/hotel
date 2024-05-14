@@ -69,7 +69,7 @@
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form id="login-form" action="/login" method="POST">
+        <form id="login-form" action="/login" method="POST" onsubmit="return validateForm()">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
@@ -79,5 +79,25 @@
         {% endif %}
         <p>Don't have an account? <a href="/register">Register here</a></p>
     </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+
+            if (username.trim() == "") {
+                errorMessage.innerText = "Please enter your username.";
+                return false;
+            }
+
+            if (password.trim() == "") {
+                errorMessage.innerText = "Please enter your password.";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
 </body>
 </html>
