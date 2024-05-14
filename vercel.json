@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "./appp.py",
+            "src": "appp.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "./appp.py"
+            "dest": "appp.py"
         }
     ]
 }
