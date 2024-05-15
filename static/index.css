@@ -134,3 +134,45 @@
     width: 100%;
     padding: 10px 0;
 }
+#nav-bar-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+#nav-bar-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar-1 li {
+    padding: 10px 15px;
+}
+
+#nav-bar-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar-1 a:hover {
+    color: yellow;
+}
+
+/* Submenu */
+#nav-bar-1 ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+}
+
+#nav-bar-1 ul li:hover > ul {
+    display: inherit;
+    flex-direction: column;
+}
+
+#nav-bar-1 ul ul li {
+    width: 100%;
+    padding: 10px 0;
+}
