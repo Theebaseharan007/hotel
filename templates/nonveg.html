@@ -30,39 +30,73 @@
         .btn-cart:hover {
             background-color: #45a049;
         }
+        #nav-bar-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+#nav-bar-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar-1 li {
+    padding: 10px 15px;
+}
+
+#nav-bar-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar-1 a:hover {
+    color: yellow;
+}
+
+/* Submenu */
+#nav-bar-1 ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+}
+
+#nav-bar-1 ul li:hover > ul {
+    display: inherit;
+    flex-direction: column;
+}
+
+#nav-bar-1 ul ul li {
+    width: 100%;
+    padding: 10px 0;
+}
+
     </style>
 </head>
-<body>
+<body style="background-color: black;">
     <!-- navbar code -->
-    <div id="navbar">
-        <ul>
-<!--            <li><a href="index.html">Home</a></li>-->
-<!--            <li><a href="about.html">About</a></li>-->
-            <li><a href="/">Home</a></li>
+    <div  id="nav-bar-1">
+        <ul >
+            <li><a href="/" >Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="">Menu</a>
-                <ul>
+                <ul >
                     <li><a href="/veg">Veg</a></li>
-                    <li><a href="/nonveg">Non-veg</a></li>
-                   
-<!--                    <li><a href="veg.html">Veg</a></li>-->
-<!--                    <li><a href="nonveg.html">Non-Veg</a></li>-->
-<!--                    <li><a href="fastfood.html">Fast Food</a></li>-->
-
+                    <li><a href="/nonveg">Non-Veg</a></li>
+                    
                 </ul>
             </li>
             <li><a href="/total_orders">Orders</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/login">Login</a></li>
-<!--            <li><a href="order.html">Order</a></li>-->
-<!--            <li><a href="contact.html">Contact</a></li>-->
-<!--            <li><a href="login.html">Login</a></li>-->
         </ul>
     </div>
     <br>
     <br>
     <br>
-    <h1 align="center">Non-Veg Foods</h1>
+    <h1 align="center" style="color: white;">Non-Veg Foods</h1>
 
     <div class="top">
         <div class="top1"><img src="static/non veg meals.jpg">
@@ -70,7 +104,7 @@
                 <p><h1></h1>NON VEG MEALS</h1></p>
             </div>
             <div class="title"> 
-                <p>Cost &nbsp;<b>: 200</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 200</b></p>
             </div>
             <!-- Cart button -->
             <div class="btn">
@@ -86,7 +120,7 @@
             <p><h1></h1>CHICKEN BIRYANI</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 150</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 150</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
                 <script type="module" src="./addtocart.js"></script>
@@ -99,7 +133,7 @@
             <p><h1></h1>MUTTON  BIRYANI</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>150</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 150</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -114,7 +148,7 @@
             <p><h1></h1>CHICKEN RICE</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 180</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 180</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -126,7 +160,7 @@
             <p><h1></h1>PRAWN BIRYANI</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>150</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 150</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -138,7 +172,7 @@
             <p><h1></h1>MUTTON GRAVY</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 80</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 80</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -153,7 +187,7 @@
             <p><h1></h1>FISH FRY</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 50</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 50</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -165,7 +199,7 @@
             <p><h1></h1>PEPPER CHICKEN</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 110</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 110</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>
@@ -177,7 +211,7 @@
             <p><h1></h1>PALLIPALAYAM</h1></p>
         </div>
         <div class="title">
-            <p>Cost &nbsp;<b>: 100</b></p>
+            <p style="color: white;">Cost &nbsp;<b>: 100</b></p>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
             </div>

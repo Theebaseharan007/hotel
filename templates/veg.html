@@ -31,43 +31,74 @@ font-awesome/5.15.2/css/all.min.css" />
     .btn-cart:hover {
         background-color: #45a049;
     }
+    #nav-bar-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+#nav-bar-1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-bar-1 li {
+    padding: 10px 15px;
+}
+
+#nav-bar-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar-1 a:hover {
+    color: yellow;
+}
+
+/* Submenu */
+#nav-bar-1 ul ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+}
+
+#nav-bar-1 ul li:hover > ul {
+    display: inherit;
+    flex-direction: column;
+}
+
+#nav-bar-1 ul ul li {
+    width: 100%;
+    padding: 10px 0;
+}
+
 </style>
 </head>
 
-<body>
+<body style="background-color: black;">
 
     <!-- navbar code -->
-    <div id="navbar">
-        <ul>
-            <li><a href="/">Home</a></li>
+    <div  id="nav-bar-1">
+        <ul >
+            <li><a href="/" >Home</a></li>
             <li><a href="/about">About</a></li>
-<!--            <li><a href="/fastfood">Fast Food</a></li>-->
-<!--            <li><a href="index.html">Home</a></li>-->
-<!--            <li><a href="about.html">About</a></li>-->
             <li><a href="">Menu</a>
-                <ul>
+                <ul >
                     <li><a href="/veg">Veg</a></li>
-                    <li><a href="/nonveg">Non-veg</a></li>
+                    <li><a href="/nonveg">Non-Veg</a></li>
                     
-<!--                    <li><a href="veg.html">Veg</a>-->
-<!--                    <li><a href="nonveg.html">Non-Veg</a>-->
-<!--                   -->
-<!--                    <li><a href="fastfood.html">Fast Food</a>-->
-                    
-                   
                 </ul>
             </li>
             <li><a href="/total_orders">Orders</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/login">Login</a></li>
-<!--            <li><a href="order.html">Order</a></li>-->
-<!--            <li><a href="contact.html">Contact</a></li>-->
-<!--            <li><a href="login.html">Login</a></li>-->
         </ul>
     </div>
     <br>
     <br><br>
-    <h1 align="center">Veg Foods</h1>
+    <h1 align="center" style="color: white;">Veg Foods</h1>
 
     <div class="top">
         <div class="top1"><img src="static/idli.jpg">
@@ -75,7 +106,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>IDLI</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 15</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 15</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -86,7 +117,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>ROAST</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 50</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 50</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -97,7 +128,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>MEALS</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 80</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 80</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -111,7 +142,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>PONGAL</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 40</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 40</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -122,7 +153,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>POORI</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 30</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 30</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -133,7 +164,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>PAROTTA</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 15</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 15</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -147,7 +178,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>CHAPATHI</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 20</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 20</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -158,7 +189,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>CURD RICE</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 40</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 40</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>
@@ -169,7 +200,7 @@ font-awesome/5.15.2/css/all.min.css" />
                 <p><h1></h1>MUSHROOM BIRYANI</h1></p>
             </div>
             <div class="title">
-                <p>Cost &nbsp;<b>: 70</b></p>
+                <p style="color: white;">Cost &nbsp;<b>: 70</b></p>
             </div>
             <div class="btn">
                 <button class="btn-cart">Add to Cart</button>

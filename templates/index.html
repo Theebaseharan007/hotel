@@ -13,13 +13,13 @@
     <link rel="icon" href="{{ url_for('static', filename='fav1.ico') }}" type="image/ico" sizes="20x20">
     <script src="{{ url_for('static', filename='index.js') }}" defer></script>
 </head>
-<body>
+<body style="background-color: black;">
     <div id="loader">
         <img src="{{ url_for('static', filename='preloader.gif') }}">
     </div>
     <div id="content">
         <!-- Navbar code -->
-        <div >
+        <div class="nav-bar-1">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
