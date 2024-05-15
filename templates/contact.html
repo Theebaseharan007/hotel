@@ -19,9 +19,14 @@
             align-items: center;
             height: 100vh;
         }
+        .flexy{
+            padding-right: 100px;
+        }
 
         .container {
-            max-width: 500px;
+            /* max-width: 500px; */
+            display: flex;
+            flex-direction:row;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
             border-radius: 8px;
@@ -74,22 +79,33 @@
 </head>
 <body>
     <div class="container">
-        <h1>Contact Us</h1>
-        <form action="{{ url_for('submit_contact') }}" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+        <!-- <h1>Contact Us</h1> -->
+        <div class="flexy">
+            <h1>Contact Details</h1>
+            <p>Name: Saravanan</p>
+            <p>Gmail: selvisasaivavirundhu@gmail.com</p>
+            <p>Phone: 9486167510</p>
+            <p>Address : 240, Opposite to Nandha Nursing College,</p>
+            <p>Erode to Perundurai Main Road, Koorapalyam, Vaikalmedu 638052</p>
+        </div>
+        <div class="flexy">
+            <h4>Contact Form</h4>
+           <form action="{{ url_for('submit_contact') }}" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>
